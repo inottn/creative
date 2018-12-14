@@ -1,0 +1,9 @@
+@import "./common/var";
+@import "./common/function";
+@import "./common/reset";
+@import "./layouts/home";
+@import "./layouts/initial-state";
+
+html, body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,73 @@
+$z-index-base: 100;
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .visual-text-wrapper {
+    position: absolute;
+    z-index: $z-index-base + 1;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      font-family: 'SF Pro Display';
+      font-weight: 800;
+      font-size: 100px;
+      color: #ffffff;
+      text-align: center;
+
+      span {
+        display: inline-block;
+      }
+    }
+  
+    p {
+      margin-top: 12px;
+      font-family: 'SF Pro Display';
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 42px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+
+  .shutters {
+    position: absolute;
+    z-index: $z-index-base;
+    top: 0;
+    display: flex;
+    width: $root-width;
+    height: $root-height;
+
+    .shutter {
+      width: 25%;
+      height: 100%;
+      background-color: #000000;
+    }
+  }
+
+  .creative-mask-wrapper {
+    position: absolute;
+    z-index: $z-index-base - 1;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+
+    .creative-mask {
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/hero-cover.jpg);
+      background-position: center;
+      background-size: 100% auto;
+    }
+  }
+}

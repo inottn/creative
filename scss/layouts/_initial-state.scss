@@ -1,0 +1,16 @@
+.initial-state {
+
+  .visual-text-wrapper {
+    h1 {
+      span {
+        opacity: 0;
+        transform: translateY(110px);
+      }
+    }
+
+    p {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+  }
+}
