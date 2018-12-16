@@ -1,0 +1,11 @@
+.shutters-hide-state {
+  .shutters .shutter {
+    transform: translateY(100%);
+  }
+
+  .creative-mask-wrapper {
+    .creative-mask {
+      background-size: 125% auto;
+    }
+  }
+}
