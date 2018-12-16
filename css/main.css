@@ -162,8 +162,30 @@ a {
   transform: translateY(100%);
 }
 
+.shutters-hide-state .shutters .shutter:nth-child(1) {
+  transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
+}
+
+.shutters-hide-state .shutters .shutter:nth-child(2) {
+  transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1) 0.1s;
+}
+
+.shutters-hide-state .shutters .shutter:nth-child(3) {
+  transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s;
+}
+
+.shutters-hide-state .shutters .shutter:nth-child(4) {
+  transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
+}
+
 .shutters-hide-state .creative-mask-wrapper .creative-mask {
   background-size: 125% auto;
+  transition: all 3s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s;
+}
+
+.shutters-hide-state .nav {
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
 }
 
 html, body {

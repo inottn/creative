@@ -1,11 +1,33 @@
 .shutters-hide-state {
   .shutters .shutter {
     transform: translateY(100%);
+
+    &:nth-child(1) {
+      transition: all 1s $ease-both;
+    }
+
+    &:nth-child(2) {
+      transition: all 1s $ease-both 0.1s;
+    }
+
+    &:nth-child(3) {
+      transition: all 1s $ease-both 0.2s;
+    }
+
+    &:nth-child(4) {
+      transition: all 1s $ease-both 0.3s;
+    }
   }
 
   .creative-mask-wrapper {
     .creative-mask {
       background-size: 125% auto;
+      transition: all 3s $ease-both 0.2s;
     }
+  }
+
+  .nav {
+    opacity: 1;
+    transition: all 1s $ease-both;
   }
 }
