@@ -82,7 +82,7 @@ a {
 
 .home .creative-mask-wrapper {
   position: absolute;
-  z-index: 99;
+  z-index: 98;
   top: 0%;
   width: 100%;
   height: 100%;
@@ -95,6 +95,38 @@ a {
   background-image: url(../images/hero-cover.jpg);
   background-position: center;
   background-size: 100% auto;
+}
+
+.home .nav {
+  position: absolute;
+  z-index: 99;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  padding: 0 200px;
+  width: 100%;
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.home .nav a {
+  font-size: 24px;
+}
+
+.home .nav ul {
+  display: flex;
+}
+
+.home .nav ul li:not(:first-child) {
+  margin-left: 100px;
+}
+
+.home .nav ul li a {
+  font-size: 16px;
 }
 
 .initial-state .visual-text-wrapper h1 span {
