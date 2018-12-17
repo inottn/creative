@@ -30,4 +30,22 @@
     opacity: 1;
     transition: all 1s $ease-both;
   }
+
+  .scroll-indicator {
+    opacity: 1;
+    transition: opacity 1s $ease-both 1s;
+    animation: scroll-indicator-animation 4s linear 0s infinite;
+  }
+}
+
+@keyframes scroll-indicator-animation {
+  0% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+  }
 }
