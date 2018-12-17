@@ -72,6 +72,7 @@ a {
   display: flex;
   width: 1440px;
   height: 900px;
+  overflow: hidden;
 }
 
 .home .shutters .shutter {

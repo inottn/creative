@@ -46,6 +46,7 @@ $z-index-base: 100;
     display: flex;
     width: $root-width;
     height: $root-height;
+    overflow: hidden;
 
     .shutter {
       width: 25%;
