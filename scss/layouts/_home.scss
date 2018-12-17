@@ -51,6 +51,7 @@ $z-index-base: 100;
       width: 25%;
       height: 100%;
       background-color: #000000;
+      transform: translateY(100%);
     }
   }
 
@@ -68,6 +69,15 @@ $z-index-base: 100;
       background-image: url(../images/hero-cover.jpg);
       background-position: center;
       background-size: 100% auto;
+    }
+  }
+
+  .creative-mask-svg {
+    position: absolute;
+    top: 0;
+  
+    #creative-path {
+      transform: translate(50vw, 50vh) translate(-50%, -50%);
     }
   }
 

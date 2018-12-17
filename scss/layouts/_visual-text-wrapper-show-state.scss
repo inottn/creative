@@ -21,4 +21,8 @@
       transition: all 1s $ease-both 0.6s;
     }
   }
+
+  .shutters .shutter {
+    transform: translateY(0);
+  }
 }
