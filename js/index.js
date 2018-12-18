@@ -17,5 +17,10 @@ scrollIndicator.addEventListener('click', function() {
   if (homeEl.classList.contains('shutters-hide-state')) {
     homeEl.classList.remove('shutters-hide-state')
     homeEl.classList.add('creative-mask-show-state')
+
+    setTimeout(() => {
+      homeEl.classList.remove('creative-mask-show-state')
+      homeEl.classList.add('heading-wrapper-show-state')
+    }, 500 + 4300)
   }
 })
