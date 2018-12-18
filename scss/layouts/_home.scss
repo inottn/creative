@@ -133,4 +133,44 @@ $z-index-base: 100;
     opacity: 0;
     transform: translateX(-50%);
   }
+
+  .heading-wrapper {
+    position: absolute;
+    z-index: $z-index-base + 3;
+    display: none;
+    width: 100%;
+    text-align: center;
+    transform: translateY(545px);
+
+    h2 {
+      font-family: 'SF Pro Display';
+      font-weight: 800;
+      font-size: 70px;
+      line-height: 78px;
+      color: #000000;
+      opacity: 0;
+    }
+
+    p {
+      margin-top: 20px;
+      font-family: 'SF Pro Display';
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 39px;
+      color: rgba($color: #000000, $alpha: 0.6);
+      opacity: 0;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 14px 25px;
+      border-radius: 4px;
+      background-color: #3340ff;
+      font-family: 'SF Pro Display';
+      font-weight: 600;
+      font-size: 16px;
+      color: #ffffff;
+      opacity: 0;
+    }
+  }
 }

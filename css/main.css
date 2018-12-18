@@ -158,6 +158,46 @@ a {
   transform: translateX(-50%);
 }
 
+.home .heading-wrapper {
+  position: absolute;
+  z-index: 103;
+  display: none;
+  width: 100%;
+  text-align: center;
+  transform: translateY(545px);
+}
+
+.home .heading-wrapper h2 {
+  font-family: 'SF Pro Display';
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 78px;
+  color: #000000;
+  opacity: 0;
+}
+
+.home .heading-wrapper p {
+  margin-top: 20px;
+  font-family: 'SF Pro Display';
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 39px;
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.home .heading-wrapper button {
+  margin-top: 30px;
+  padding: 14px 25px;
+  border-radius: 4px;
+  background-color: #3340ff;
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0;
+}
+
 .initial-state .visual-text-wrapper {
   opacity: 1;
 }
