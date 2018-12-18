@@ -119,7 +119,7 @@ $z-index-base: 100;
   .scroll-indicator {
     box-sizing: content-box;
     position: absolute;
-    z-index: $z-index-base - 2;
+    z-index: $z-index-base + 2;
     bottom: 10%;
     left: 50%;
     width: 14px;
