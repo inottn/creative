@@ -1,4 +1,8 @@
 .shutters-hide-state {
+  .visual-text-wrapper {
+    opacity: 1;
+  }
+
   .shutters .shutter {
     transform: translateY(100%);
 
@@ -22,8 +26,13 @@
   .creative-mask-wrapper {
     .creative-mask {
       background-size: 125% auto;
+      clip-path: url(#creative-clip-path);
       transition: all 3s $ease-both 0.2s;
     }
+  }
+
+  .creative-mask-svg  #creative-path {
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
   }
 
   .nav {

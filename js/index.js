@@ -16,6 +16,6 @@ homeEl.addEventListener('click', function() {
 scrollIndicator.addEventListener('click', function() {
   if (homeEl.classList.contains('shutters-hide-state')) {
     homeEl.classList.remove('shutters-hide-state')
-    homeEl.classList.add('creative-mask-show')
+    homeEl.classList.add('creative-mask-show-state')
   }
 })

@@ -41,6 +41,7 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 
 .home .visual-text-wrapper h1 {
@@ -105,7 +106,8 @@ a {
 }
 
 .home .creative-mask-svg #creative-path {
-  transform: translate(50vw, 50vh) translate(-50%, -50%);
+  transform-origin: center;
+  transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
 }
 
 .home .nav {
@@ -155,6 +157,10 @@ a {
   transform: translateX(-50%);
 }
 
+.initial-state .visual-text-wrapper {
+  opacity: 1;
+}
+
 .initial-state .visual-text-wrapper h1 span {
   opacity: 0;
   transform: translateY(110px);
@@ -167,6 +173,10 @@ a {
 
 .initial-state .shutters .shutter {
   transform: translateY(0);
+}
+
+.visual-text-wrapper-show-state .visual-text-wrapper {
+  opacity: 1;
 }
 
 .visual-text-wrapper-show-state .visual-text-wrapper h1 span {
@@ -192,6 +202,10 @@ a {
   transform: translateY(0);
 }
 
+.shutters-hide-state .visual-text-wrapper {
+  opacity: 1;
+}
+
 .shutters-hide-state .shutters .shutter {
   transform: translateY(100%);
 }
@@ -214,7 +228,12 @@ a {
 
 .shutters-hide-state .creative-mask-wrapper .creative-mask {
   background-size: 125% auto;
+  clip-path: url(#creative-clip-path);
   transition: all 3s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s;
+}
+
+.shutters-hide-state .creative-mask-svg #creative-path {
+  transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
 }
 
 .shutters-hide-state .nav {
@@ -238,6 +257,23 @@ a {
   100% {
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
   }
+}
+
+.creative-mask-show-state .visual-text-wrapper {
+  opacity: 0;
+}
+
+.creative-mask-show-state .creative-mask-wrapper .creative-mask {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/hero-cover.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  clip-path: url(#creative-clip-path);
+}
+
+.creative-mask-show-state .creative-mask-svg #creative-path {
+  transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
 }
 
 html, body {
