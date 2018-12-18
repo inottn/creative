@@ -71,6 +71,7 @@ $z-index-base: 100;
       background-image: url(../images/hero-cover.jpg);
       background-position: center;
       background-size: 100% auto;
+      clip-path: url(#creative-clip-path);
     }
   }
 
