@@ -321,6 +321,23 @@ a {
   transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
 }
 
+.creative-mask-show-state .heading-wrapper {
+  display: block;
+}
+
+.heading-wrapper-show-state .creative-mask-wrapper {
+  transform: translateY(-228px);
+}
+
+.heading-wrapper-show-state .heading-wrapper {
+  display: block;
+}
+
+.heading-wrapper-show-state .heading-wrapper h2, .heading-wrapper-show-state .heading-wrapper p, .heading-wrapper-show-state .heading-wrapper button {
+  opacity: 1;
+  transform: translateY(-150px);
+}
+
 html, body {
   overflow-x: hidden;
 }

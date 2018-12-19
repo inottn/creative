@@ -2,4 +2,13 @@
   .creative-mask-wrapper {
     transform: translateY(-228px);
   }
+
+  .heading-wrapper {
+    display: block;
+
+    h2, p, button {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+  }
 }
