@@ -30,6 +30,11 @@
       font-size: 16px;
     }
   }
+
+  .works {
+    display: flex;
+    transform: translateY(820px);
+  }
 }
 
 @keyframes nav-transition {

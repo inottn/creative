@@ -356,6 +356,11 @@ a {
   display: block;
 }
 
+.creative-mask-show-state .works {
+  display: flex;
+  transform: translateY(930px);
+}
+
 .heading-wrapper-show-state .creative-mask-wrapper {
   transform: translateY(-228px);
 }
@@ -386,6 +391,11 @@ a {
 .heading-wrapper-show-state .nav ul li a {
   font-weight: normal;
   font-size: 16px;
+}
+
+.heading-wrapper-show-state .works {
+  display: flex;
+  transform: translateY(820px);
 }
 
 @keyframes nav-transition {
