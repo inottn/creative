@@ -78,7 +78,7 @@ $z-index-base: 100;
   .creative-mask-svg {
     position: absolute;
     top: 0;
-  
+
     #creative-path {
       transform-origin: center;
       transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
@@ -171,6 +171,38 @@ $z-index-base: 100;
       font-size: 16px;
       color: #ffffff;
       opacity: 0;
+    }
+  }
+
+  .works {
+    overflow: scroll hidden;
+    z-index: $z-index-base + 3;
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 100%;
+
+    .work {
+      overflow: hidden;
+      flex-shrink: 0;
+      margin: 0 24px 50px;
+      width: 315px;
+      height: 420px;
+      border-radius: 8px;
+      box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1),
+        0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

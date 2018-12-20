@@ -198,6 +198,37 @@ a {
   opacity: 0;
 }
 
+.home .works {
+  overflow: scroll hidden;
+  z-index: 103;
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+
+.home .works .work {
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0 24px 50px;
+  width: 315px;
+  height: 420px;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.home .works .work:first-child {
+  margin-left: 0;
+}
+
+.home .works .work:last-child {
+  margin-right: 0;
+}
+
+.home .works .work img {
+  width: 100%;
+}
+
 .initial-state .visual-text-wrapper {
   opacity: 1;
 }
@@ -369,7 +400,7 @@ a {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
