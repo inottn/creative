@@ -24,6 +24,10 @@
 
   .heading-wrapper {
     display: block;
+
+    h2, p, button {
+      transform: translateY(150px);
+    }
   }
 
   .works {

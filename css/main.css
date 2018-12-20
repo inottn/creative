@@ -164,7 +164,7 @@ a {
   display: none;
   width: 100%;
   text-align: center;
-  transform: translateY(545px);
+  transform: translateY(395px);
 }
 
 .home .heading-wrapper h2 {
@@ -356,6 +356,10 @@ a {
   display: block;
 }
 
+.creative-mask-show-state .heading-wrapper h2, .creative-mask-show-state .heading-wrapper p, .creative-mask-show-state .heading-wrapper button {
+  transform: translateY(150px);
+}
+
 .creative-mask-show-state .works {
   display: flex;
   transform: translateY(820px);
@@ -376,7 +380,7 @@ a {
 
 .heading-wrapper-show-state .heading-wrapper h2, .heading-wrapper-show-state .heading-wrapper p, .heading-wrapper-show-state .heading-wrapper button {
   opacity: 1;
-  transform: translateY(-150px);
+  transform: translateY(0);
 }
 
 .heading-wrapper-show-state .nav {
