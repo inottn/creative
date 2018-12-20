@@ -28,6 +28,11 @@
 
   .works {
     display: flex;
-    transform: translateY(930px);
+    transform: translateY(820px);
+
+    .work {
+      opacity: 0;
+      transform: translateY(110px);
+    }
   }
 }

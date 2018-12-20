@@ -358,7 +358,12 @@ a {
 
 .creative-mask-show-state .works {
   display: flex;
-  transform: translateY(930px);
+  transform: translateY(820px);
+}
+
+.creative-mask-show-state .works .work {
+  opacity: 0;
+  transform: translateY(110px);
 }
 
 .heading-wrapper-show-state .creative-mask-wrapper {
@@ -396,6 +401,11 @@ a {
 .heading-wrapper-show-state .works {
   display: flex;
   transform: translateY(820px);
+}
+
+.heading-wrapper-show-state .works .work {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes nav-transition {
