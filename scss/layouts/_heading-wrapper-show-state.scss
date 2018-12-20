@@ -1,14 +1,29 @@
 .heading-wrapper-show-state {
   .creative-mask-wrapper {
     transform: translateY(-228px);
+    transition: all 1s $ease-both;
   }
 
   .heading-wrapper {
     display: block;
 
-    h2, p, button {
+    h2,
+    p,
+    button {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    h2 {
+      transition: all 1s $ease-both 0.3s;
+    }
+
+    p {
+      transition: all 1s $ease-both 0.4s;
+    }
+
+    button {
+      transition: all 1s $ease-both 0.5s;
     }
   }
 
@@ -38,6 +53,26 @@
     .work {
       opacity: 1;
       transform: translateY(0);
+
+      &:nth-child(1) {
+        transition: all 1s $ease-both 0.6s;
+      }
+
+      &:nth-child(2) {
+        transition: all 1s $ease-both 0.7s;
+      }
+
+      &:nth-child(3) {
+        transition: all 1s $ease-both 0.8s;
+      }
+
+      &:nth-child(4) {
+        transition: all 1s $ease-both 0.9s;
+      }
+
+      &:nth-child(5) {
+        transition: all 1s $ease-both 1s;
+      }
     }
   }
 }
