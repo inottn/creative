@@ -11,4 +11,34 @@
       transform: translateY(-150px);
     }
   }
+
+  .nav {
+    align-items: baseline;
+    margin: 0;
+    padding: 6px 200px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    color: #000000;
+    animation: nav-transition 1s $ease-both 0.5s 1 forwards;
+
+    a {
+      font-size: 20px;
+    }
+
+    ul li a {
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+}
+
+@keyframes nav-transition {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
