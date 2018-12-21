@@ -175,6 +175,49 @@ $z-index-base: 100;
     }
   }
 
+  .selected-projects-text-wrapper {
+    position: absolute;
+    z-index: $z-index-base + 3;
+    display: none;
+    margin-left: 200px;
+
+    h2 {
+      font-family: 'SF Pro Display';
+      font-weight: 700;
+      font-size: 36px;
+      color: #000000;
+    }
+
+    p {
+      margin-top: 8px;
+      font-family: 'SF Pro Display';
+      font-weight: normal;
+      font-size: 21px;
+      color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-top: 26px;
+      font-family: 'SF Pro Display';
+      font-weight: 600;
+      font-size: 14px;
+      color: #ff3366;
+
+      button {
+        margin-right: 9px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #000000;
+        background-image: url(../images/icon01.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
   .works {
     overflow: scroll hidden;
     z-index: $z-index-base + 3;
