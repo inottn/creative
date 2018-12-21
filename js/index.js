@@ -1,5 +1,6 @@
 const homeEl = document.querySelector('.home')
 const scrollIndicator = document.querySelector('.scroll-indicator')
+const worksEl = document.querySelector('.works')
 
 homeEl.addEventListener('click', function() {
   if (this.classList.contains('initial-state')) {
@@ -21,6 +22,10 @@ scrollIndicator.addEventListener('click', function() {
     setTimeout(() => {
       homeEl.classList.remove('creative-mask-show-state')
       homeEl.classList.add('heading-wrapper-show-state')
+      worksEl.scrollTo(
+        (worksEl.scrollWidth - document.documentElement.clientWidth) / 2,
+        0
+      )
     }, 500 + 4300)
   }
 })
