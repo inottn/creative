@@ -1,6 +1,7 @@
 const homeEl = document.querySelector('.home')
 const scrollIndicator = document.querySelector('.scroll-indicator')
 const worksEl = document.querySelector('.works')
+const discoverBtn = document.querySelector('.heading-wrapper button')
 
 homeEl.addEventListener('click', function() {
   if (this.classList.contains('initial-state')) {
@@ -27,5 +28,12 @@ scrollIndicator.addEventListener('click', function() {
         0
       )
     }, 500 + 4300)
+  }
+})
+
+discoverBtn.addEventListener('click', function() {
+  if (homeEl.classList.contains('heading-wrapper-show-state')) {
+    homeEl.classList.remove('heading-wrapper-show-state')
+    homeEl.classList.add('works-show-state')
   }
 })
