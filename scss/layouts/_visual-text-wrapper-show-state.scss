@@ -1,7 +1,8 @@
 .visual-text-wrapper-show-state {
   .visual-text-wrapper {
+    display: flex;
     opacity: 1;
-    
+
     h1 {
       span {
         opacity: 1;
@@ -24,7 +25,11 @@
     }
   }
 
-  .shutters .shutter {
-    transform: translateY(0);
+  .shutters {
+    display: flex;
+    
+    .shutter {
+      transform: translateY(0);
+    }
   }
 }

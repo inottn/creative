@@ -1,25 +1,30 @@
 .shutters-hide-state {
   .visual-text-wrapper {
+    display: flex;
     opacity: 1;
   }
 
-  .shutters .shutter {
-    transform: translateY(100%);
+  .shutters {
+    display: flex;
 
-    &:nth-child(1) {
-      transition: all 1s $ease-both;
-    }
+    .shutter {
+      transform: translateY(100%);
 
-    &:nth-child(2) {
-      transition: all 1s $ease-both 0.1s;
-    }
+      &:nth-child(1) {
+        transition: all 1s $ease-both;
+      }
 
-    &:nth-child(3) {
-      transition: all 1s $ease-both 0.2s;
-    }
+      &:nth-child(2) {
+        transition: all 1s $ease-both 0.1s;
+      }
 
-    &:nth-child(4) {
-      transition: all 1s $ease-both 0.3s;
+      &:nth-child(3) {
+        transition: all 1s $ease-both 0.2s;
+      }
+
+      &:nth-child(4) {
+        transition: all 1s $ease-both 0.3s;
+      }
     }
   }
 
@@ -31,7 +36,7 @@
     }
   }
 
-  .creative-mask-svg  #creative-path {
+  .creative-mask-svg #creative-path {
     transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
   }
 
