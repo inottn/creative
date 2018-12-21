@@ -113,7 +113,7 @@ a {
 
 .home .nav {
   position: absolute;
-  z-index: 99;
+  z-index: 101;
   top: 0%;
   display: flex;
   justify-content: space-between;

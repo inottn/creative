@@ -87,7 +87,7 @@ $z-index-base: 100;
 
   .nav {
     position: absolute;
-    z-index: $z-index-base - 1;
+    z-index: $z-index-base + 1;
     top: 0%;
     display: flex;
     justify-content: space-between;
