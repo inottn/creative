@@ -14,6 +14,7 @@ html {
 button, input {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 ul, li {
@@ -23,6 +24,7 @@ ul, li {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .home {
@@ -149,6 +151,7 @@ a {
   z-index: 102;
   bottom: 10%;
   left: 50%;
+  display: none;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -284,6 +287,10 @@ a {
   transform: translateY(0);
 }
 
+.visual-text-wrapper-show-state .scroll-indicator {
+  display: inline-block;
+}
+
 .shutters-hide-state .visual-text-wrapper {
   display: flex;
   opacity: 1;
@@ -329,6 +336,7 @@ a {
 }
 
 .shutters-hide-state .scroll-indicator {
+  display: inline-block;
   opacity: 1;
   transition: opacity 1s cubic-bezier(0.64, 0.04, 0.35, 1) 1s;
   animation: scroll-indicator-animation 4s linear 0s infinite;

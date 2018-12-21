@@ -46,6 +46,7 @@
   }
 
   .scroll-indicator {
+    display: inline-block;
     opacity: 1;
     transition: opacity 1s $ease-both 1s;
     animation: scroll-indicator-animation 4s linear 0s infinite;
