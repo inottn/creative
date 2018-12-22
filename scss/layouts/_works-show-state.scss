@@ -1,3 +1,17 @@
 .works-show-state {
-  
+  .selected-projects-text-wrapper {
+    display: block;
+    animation: selected-projects-text-wrapper-show-animation 2s $ease-both 0.1s 1 forwards;
+  }
+}
+
+@keyframes selected-projects-text-wrapper-show-animation {
+  0% {
+    top: 623px;
+    opacity: 0;
+  }
+  100% {
+    top: 110px;
+    opacity: 1;
+  }
 }
