@@ -525,9 +525,29 @@ a {
   }
 }
 
+.works-show-state .heading-wrapper {
+  display: block;
+  animation: heading-wrapper-hide-animation 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0s 1 forwards;
+}
+
+.works-show-state .heading-wrapper h2, .works-show-state .heading-wrapper p, .works-show-state .heading-wrapper button {
+  opacity: 1;
+}
+
 .works-show-state .selected-projects-text-wrapper {
   display: block;
   animation: selected-projects-text-wrapper-show-animation 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0.1s 1 forwards;
+}
+
+@keyframes heading-wrapper-hide-animation {
+  0% {
+    transform: translateY(395px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-412px);
+    opacity: 0;
+  }
 }
 
 @keyframes selected-projects-text-wrapper-show-animation {
