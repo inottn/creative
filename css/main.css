@@ -546,6 +546,25 @@ a {
   animation: selected-projects-text-wrapper-show-animation 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0.1s 1 forwards;
 }
 
+.works-show-state .nav {
+  align-items: baseline;
+  margin: 0;
+  padding: 6px 200px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  color: #000000;
+  opacity: 1;
+}
+
+.works-show-state .nav a {
+  font-size: 20px;
+}
+
+.works-show-state .nav ul li a {
+  font-weight: normal;
+  font-size: 16px;
+}
+
 @keyframes heading-wrapper-hide-animation {
   0% {
     transform: translateY(395px);
