@@ -48,11 +48,10 @@
 
   .works {
     display: flex;
-    transform: translateY(820px);
 
     .work {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(820px);
 
       &:nth-child(1) {
         transition: all 1s $ease-both 0.6s;
