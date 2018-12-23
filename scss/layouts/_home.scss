@@ -45,8 +45,8 @@ $z-index-base: 100;
     z-index: $z-index-base;
     top: 0;
     display: none;
-    width: $root-width;
-    height: $root-height;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 
     .shutter {
