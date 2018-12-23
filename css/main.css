@@ -245,7 +245,7 @@ a {
 }
 
 .home .works {
-  overflow-x: scroll;
+  overflow: scroll hidden;
   z-index: 100;
   position: absolute;
   top: 0;

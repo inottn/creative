@@ -219,7 +219,7 @@ $z-index-base: 100;
   }
 
   .works {
-    overflow-x: scroll;
+    overflow: scroll hidden;
     z-index: $z-index-base;
     position: absolute;
     top: 0;
