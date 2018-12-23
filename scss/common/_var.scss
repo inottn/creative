@@ -1,3 +1,8 @@
 $root-width: 1440px;
 $root-height: 900px;
 $ease-both: cubic-bezier(0.64, 0.04, 0.35, 1);
+
+:root {
+  --clip-path-initial-scale: 1;
+  --clip-path-transform-scale: 42;
+}

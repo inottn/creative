@@ -80,6 +80,10 @@ $z-index-base: 100;
     top: 0;
 
     #creative-path {
+      @media screen and (max-width: $root-width) {
+        transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-initial-scale));
+      }
+
       transform-origin: center;
       transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
     }
@@ -142,6 +146,10 @@ $z-index-base: 100;
     width: 100%;
     text-align: center;
     transform: translateY(395px);
+
+    @media screen and (max-width: $root-width) {
+      transform: translateY(px2vw(395px));
+    }
 
     h2 {
       font-family: 'SF Pro Display';

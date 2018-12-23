@@ -1,3 +1,8 @@
+:root {
+  --clip-path-initial-scale: 1;
+  --clip-path-transform-scale: 42;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -113,6 +118,12 @@ a {
   transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
 }
 
+@media screen and (max-width: 1440px) {
+  .home .creative-mask-svg #creative-path {
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-initial-scale));
+  }
+}
+
 .home .nav {
   position: absolute;
   z-index: 101;
@@ -168,6 +179,12 @@ a {
   width: 100%;
   text-align: center;
   transform: translateY(395px);
+}
+
+@media screen and (max-width: 1440px) {
+  .home .heading-wrapper {
+    transform: translateY(27.43056vw);
+  }
 }
 
 .home .heading-wrapper h2 {
@@ -374,6 +391,12 @@ a {
   transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
 }
 
+@media screen and (max-width: 1440px) {
+  .shutters-hide-state .creative-mask-svg #creative-path {
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-transform-scale));
+  }
+}
+
 .shutters-hide-state .nav {
   opacity: 1;
   transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
@@ -415,6 +438,12 @@ a {
   transition: all 4s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
 }
 
+@media screen and (max-width: 1440px) {
+  .creative-mask-show-state .creative-mask-svg #creative-path {
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-initial-scale));
+  }
+}
+
 .creative-mask-show-state .nav {
   transform: translateY(20px);
   transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
@@ -438,8 +467,14 @@ a {
 }
 
 .heading-wrapper-show-state .creative-mask-wrapper {
-  transform: translateY(-228px);
+  transform: translateY(8.33333vw) translateY(-50vh) translateY(102.85px);
   transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1);
+}
+
+@media screen and (max-width: 1440px) {
+  .heading-wrapper-show-state .creative-mask-wrapper {
+    transform: translateY(8.33333vw) translateY(-50vh) translateY(7.14236vw);
+  }
 }
 
 .heading-wrapper-show-state .heading-wrapper {
@@ -532,7 +567,15 @@ a {
 
 .works-show-state .heading-wrapper {
   display: block;
-  animation: heading-wrapper-hide-animation 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0s 1 forwards;
+  opacity: 0;
+  transform: translateY(-412px);
+  transition: all 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0s;
+}
+
+@media screen and (max-width: 1440px) {
+  .works-show-state .heading-wrapper {
+    transform: translateY(-28.61111vw);
+  }
 }
 
 .works-show-state .heading-wrapper h2, .works-show-state .heading-wrapper p, .works-show-state .heading-wrapper button {
@@ -591,17 +634,6 @@ a {
 
 .works-show-state .works .work:nth-child(5) {
   transition: all 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0.5s;
-}
-
-@keyframes heading-wrapper-hide-animation {
-  0% {
-    transform: translateY(395px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-412px);
-    opacity: 0;
-  }
 }
 
 @keyframes selected-projects-text-wrapper-show-animation {

@@ -16,6 +16,10 @@
   .creative-mask-svg  #creative-path {
     transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
     transition: all 4s $ease-both 0.3s;
+
+    @media screen and (max-width: $root-width) {
+      transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-initial-scale));
+    }
   }
 
   .nav {

@@ -37,3 +37,25 @@ discoverBtn.addEventListener('click', function() {
     homeEl.classList.add('works-show-state')
   }
 })
+
+document.documentElement.style.setProperty(
+  '--clip-path-initial-scale',
+  document.documentElement.clientWidth / 1440
+)
+
+document.documentElement.style.setProperty(
+  '--clip-path-transform-scale',
+  (document.documentElement.clientWidth / 1440) * 42
+)
+
+window.addEventListener('resize', function() {
+  document.documentElement.style.setProperty(
+    '--clip-path-initial-scale',
+    document.documentElement.clientWidth / 1440
+  )
+
+  document.documentElement.style.setProperty(
+    '--clip-path-transform-scale',
+    (document.documentElement.clientWidth / 1440) * 42
+  )
+})

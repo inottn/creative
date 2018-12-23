@@ -37,6 +37,10 @@
   }
 
   .creative-mask-svg #creative-path {
+    @media screen and (max-width: $root-width) {
+      transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-transform-scale));
+    }
+
     transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
   }
 
