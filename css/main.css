@@ -262,7 +262,8 @@ a {
 }
 
 .home .works {
-  overflow: scroll hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   z-index: 100;
   position: absolute;
   top: 0;
