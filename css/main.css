@@ -272,6 +272,12 @@ a {
   height: 100%;
 }
 
+@media screen and (min-width: 1767px) {
+  .home .works {
+    justify-content: center;
+  }
+}
+
 .home .works .work {
   overflow: hidden;
   flex-shrink: 0;
