@@ -1,6 +1,7 @@
 const homeEl = document.querySelector('.home')
 const scrollIndicator = document.querySelector('.scroll-indicator')
 const worksEl = document.querySelector('.works')
+const workEls = worksEl.querySelectorAll('.work')
 const discoverBtn = document.querySelector('.heading-wrapper button')
 
 homeEl.addEventListener('click', function() {
@@ -35,8 +36,24 @@ discoverBtn.addEventListener('click', function() {
   if (homeEl.classList.contains('heading-wrapper-show-state')) {
     homeEl.classList.remove('heading-wrapper-show-state')
     homeEl.classList.add('works-show-state')
+
+    setTimeout(() => {
+      worksEl.classList.add('show')
+    }, 2500)
   }
 })
+
+for (const workEl of workEls) {
+  workEl.addEventListener('mouseenter', function() {
+    for (const workEl of workEls) workEl.classList.add('zoom-out')
+    this.classList.remove('zoom-out')
+    this.classList.add('zoom-in')
+  })
+  workEl.addEventListener('mouseleave', function() {
+    for (const workEl of workEls) workEl.classList.remove('zoom-out')
+    this.classList.remove('zoom-in')
+  })
+}
 
 document.documentElement.style.setProperty(
   '--clip-path-initial-scale',

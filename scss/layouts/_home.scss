@@ -81,7 +81,8 @@ $z-index-base: 100;
 
     #creative-path {
       @media screen and (max-width: $root-width) {
-        transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-initial-scale));
+        transform: translate(50vw, 50vh) translate(-50%, -50%)
+          scale(var(--clip-path-initial-scale));
       }
 
       transform-origin: center;

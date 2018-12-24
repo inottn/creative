@@ -618,6 +618,19 @@ a {
   display: flex;
 }
 
+.works-show-state .works.show .work {
+  transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1) !important;
+}
+
+.works-show-state .works.show .work.zoom-in {
+  transform: translateY(306px) scale(1.1);
+}
+
+.works-show-state .works.show .work.zoom-out {
+  opacity: 0.5;
+  transform: translateY(306px) scale(0.9);
+}
+
 .works-show-state .works .work {
   opacity: 1;
   transform: translateY(306px);

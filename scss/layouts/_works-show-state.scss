@@ -48,6 +48,19 @@
   .works {
     display: flex;
 
+    &.show .work {
+      transition: all 1s $ease-both!important;
+    }
+
+    &.show .work.zoom-in {
+      transform: translateY(306px) scale(1.1);
+    }
+
+    &.show .work.zoom-out {
+      opacity: 0.5;
+      transform: translateY(306px) scale(0.9);
+    }
+
     .work {
       opacity: 1;
       transform: translateY(306px);

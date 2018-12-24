@@ -4,7 +4,8 @@
     transition: all 1s $ease-both;
 
     @media screen and (max-width: $root-width) {
-      transform: translateY(px2vw(120px)) translateY(-50vh) translateY(px2vw(102.85px));
+      transform: translateY(px2vw(120px)) translateY(-50vh)
+        translateY(px2vw(102.85px));
     }
   }
 
