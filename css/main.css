@@ -97,6 +97,8 @@ a {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
+  clip-path: url(#creative-clip-path);
+  -webkit-clip-path: url(#creative-clip-path);
 }
 
 .home .creative-mask-wrapper .creative-mask {
@@ -104,12 +106,11 @@ a {
   height: 100%;
   background-image: url(../images/hero-cover.jpg);
   background-position: center;
-  background-size: 100% auto;
-  clip-path: url(#creative-clip-path);
-  -webkit-clip-path: url(#creative-clip-path);
+  background-size: 100%;
 }
 
 .home .creative-mask-svg {
+  overflow: visible;
   position: absolute;
   top: 0;
 }
@@ -389,11 +390,14 @@ a {
   transition: all 1s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
 }
 
+.shutters-hide-state .creative-mask-wrapper {
+  clip-path: none;
+  -webkit-clip-path: none;
+}
+
 .shutters-hide-state .creative-mask-wrapper .creative-mask {
-  background-size: 125%;
-  clip-path: url(#creative-clip-path);
-  -webkit-clip-path: url(#creative-clip-path);
-  transition: all 3s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s;
+  transform: scale(1.25);
+  transition: transform 3s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s;
 }
 
 .shutters-hide-state .creative-mask-svg #creative-path {
@@ -437,13 +441,11 @@ a {
 }
 
 .creative-mask-show-state .creative-mask-wrapper .creative-mask {
-  background-size: 100% auto;
-  clip-path: url(#creative-clip-path);
-  -webkit-clip-path: url(#creative-clip-path);
-  transition: all 4s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
+  transition: transform 4s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
 }
 
 .creative-mask-show-state .creative-mask-svg #creative-path {
+  will-change: transform;
   transform: translate(50vw, 50vh) translate(-50%, -50%) scale(1);
   transition: all 4s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
 }

@@ -29,20 +29,21 @@
   }
 
   .creative-mask-wrapper {
+    clip-path: none;
+    -webkit-clip-path: none;
+
     .creative-mask {
-      background-size: 125%;
-      clip-path: url(#creative-clip-path);
-      -webkit-clip-path: url(#creative-clip-path);
-      transition: all 3s $ease-both 0.2s;
+      transform: scale(1.25);
+      transition: transform 3s $ease-both 0.2s;
     }
   }
 
   .creative-mask-svg #creative-path {
+    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
+
     @media screen and (max-width: $root-width) {
       transform: translate(50vw, 50vh) translate(-50%, -50%) scale(var(--clip-path-transform-scale));
     }
-
-    transform: translate(50vw, 50vh) translate(-50%, -50%) scale(42);
   }
 
   .nav {
