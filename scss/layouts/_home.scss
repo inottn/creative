@@ -58,6 +58,7 @@ $z-index-base: 100;
   }
 
   .creative-mask-wrapper {
+    overflow: hidden;
     position: absolute;
     z-index: $z-index-base - 2;
     top: 0%;

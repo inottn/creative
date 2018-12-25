@@ -91,6 +91,7 @@ a {
 }
 
 .home .creative-mask-wrapper {
+  overflow: hidden;
   position: absolute;
   z-index: 98;
   top: 0%;
