@@ -9,6 +9,7 @@
     .creative-mask {
       background-size: 100% auto;
       clip-path: url(#creative-clip-path);
+      -webkit-clip-path: url(#creative-clip-path);
       transition: all 4s $ease-both 0.3s;
     }
   }

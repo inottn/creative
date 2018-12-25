@@ -106,6 +106,7 @@ a {
   background-position: center;
   background-size: 100% auto;
   clip-path: url(#creative-clip-path);
+  -webkit-clip-path: url(#creative-clip-path);
 }
 
 .home .creative-mask-svg {
@@ -391,6 +392,7 @@ a {
 .shutters-hide-state .creative-mask-wrapper .creative-mask {
   background-size: 125%;
   clip-path: url(#creative-clip-path);
+  -webkit-clip-path: url(#creative-clip-path);
   transition: all 3s cubic-bezier(0.64, 0.04, 0.35, 1) 0.2s;
 }
 
@@ -437,6 +439,7 @@ a {
 .creative-mask-show-state .creative-mask-wrapper .creative-mask {
   background-size: 100% auto;
   clip-path: url(#creative-clip-path);
+  -webkit-clip-path: url(#creative-clip-path);
   transition: all 4s cubic-bezier(0.64, 0.04, 0.35, 1) 0.3s;
 }
 
