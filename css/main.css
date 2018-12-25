@@ -73,6 +73,19 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .home .visual-text-wrapper h1 {
+    font-size: 16vw;
+  }
+  .home .visual-text-wrapper p {
+    font-size: calc(8px + 4.8vw);
+    line-height: calc(4px + 7.8vw);
+  }
+  .home .visual-text-wrapper p br {
+    display: none;
+  }
+}
+
 .home .shutters {
   position: absolute;
   z-index: 100;
@@ -114,6 +127,8 @@ a {
   overflow: visible;
   position: absolute;
   top: 0;
+  transform-origin: left top;
+  transform: scale(0.1);
 }
 
 .home .creative-mask-svg #creative-path {

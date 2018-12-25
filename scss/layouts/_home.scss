@@ -38,6 +38,21 @@ $z-index-base: 100;
       color: #ffffff;
       text-align: center;
     }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 16vw;
+      }
+
+      p {
+        font-size: calc(8px + 4.8vw);
+        line-height: calc(4px + 7.8vw);
+
+        br {
+          display: none;
+        }
+      }
+    }
   }
 
   .shutters {
@@ -81,6 +96,8 @@ $z-index-base: 100;
     overflow: visible;
     position: absolute;
     top: 0;
+    transform-origin: left top;
+    transform: scale(0.1);
 
     #creative-path {
       @media screen and (max-width: $root-width) {
