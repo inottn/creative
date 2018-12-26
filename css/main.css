@@ -123,6 +123,12 @@ a {
   background-size: 100%;
 }
 
+@media screen and (max-aspect-ratio: 1 / 1) {
+  .home .creative-mask-wrapper .creative-mask {
+    background-size: auto 100%;
+  }
+}
+
 .home .creative-mask-svg {
   overflow: visible;
   position: absolute;
