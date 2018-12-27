@@ -57,24 +57,23 @@ for (const workEl of workEls) {
   })
 }
 
-document.documentElement.style.setProperty(
-  '--clip-path-initial-scale',
-  document.documentElement.clientWidth / 1440
-)
+function setClipPathInitialScale() {
+  let clientWidth = document.documentElement.clientWidth
+  let ratio = clientWidth <= 600 ? 1.28 : 1
 
-document.documentElement.style.setProperty(
-  '--clip-path-transform-scale',
-  (document.documentElement.clientWidth / 1440) * 42
-)
-
-window.addEventListener('resize', function() {
   document.documentElement.style.setProperty(
     '--clip-path-initial-scale',
-    document.documentElement.clientWidth / 1440
+    document.documentElement.clientWidth / 1440 * ratio
   )
-
+  
   document.documentElement.style.setProperty(
     '--clip-path-transform-scale',
     (document.documentElement.clientWidth / 1440) * 42
   )
+}
+
+setClipPathInitialScale()
+
+window.addEventListener('resize', function() {
+  setClipPathInitialScale()
 })
