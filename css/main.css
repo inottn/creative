@@ -655,6 +655,10 @@ a {
   transition: all 2s cubic-bezier(0.64, 0.04, 0.35, 1) 0s;
 }
 
+.works-show-state .heading-wrapper.hide {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
   .works-show-state .heading-wrapper {
     transform: translateY(-28.61111vw);

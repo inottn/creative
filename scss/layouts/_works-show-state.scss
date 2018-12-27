@@ -11,6 +11,10 @@
     transform: translateY(-412px);
     transition: all 2s $ease-both 0s;
 
+    &.hide {
+      display: none;
+    }
+
     @media screen and (max-width: $root-width) {
       transform: translateY(px2vw(-412px));
     }
