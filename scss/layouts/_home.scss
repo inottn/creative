@@ -230,6 +230,14 @@ $z-index-base: 100;
     display: none;
     margin-left: 200px;
 
+    @media screen and (max-width: 1100px) {
+      margin-left: px2vw(200px);
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-left: calc(6vw);
+    }
+
     h2 {
       font-family: 'SF Pro Display';
       font-weight: 700;

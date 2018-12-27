@@ -24,6 +24,10 @@
     display: block;
     opacity: 0;
     animation: selected-projects-text-wrapper-show-animation 2s $ease-both 0.1s 1 forwards;
+
+    @media screen and (max-width: 425px) {
+      animation: selected-projects-text-wrapper-show-animation-media 2s $ease-both 0.1s 1 forwards;
+    }
   }
 
   .nav {
@@ -38,7 +42,7 @@
     @media screen and (max-width: 1100px) {
       padding: 6px px2vw(140px);
     }
-    
+
     a {
       font-size: 20px;
     }
@@ -99,6 +103,17 @@
   }
   100% {
     top: 110px;
+    opacity: 1;
+  }
+}
+
+@keyframes selected-projects-text-wrapper-show-animation-media {
+  0% {
+    top: px2vw(623px);
+    opacity: 0;
+  }
+  100% {
+    top: calc(7vw + 42px);
     opacity: 1;
   }
 }
