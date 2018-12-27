@@ -299,6 +299,11 @@ $z-index-base: 100;
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1),
         0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
+      @media screen and (max-width: 1100px) {
+        width: calc(198.75px + 19.875vw);
+        height: calc(261.66px + 26.16667vw);
+      }
+      
       &:first-child {
         margin-left: 0;
       }

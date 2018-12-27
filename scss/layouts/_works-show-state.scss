@@ -62,16 +62,28 @@
 
     &.show .work.zoom-in {
       transform: translateY(306px) scale(1.1);
+
+      @media screen and (max-width: 600px) {
+        transform: translateY(calc(206px + 16vw)) scale(1.1);
+      }
     }
 
     &.show .work.zoom-out {
       opacity: 0.5;
       transform: translateY(306px) scale(0.9);
+
+      @media screen and (max-width: 600px) {
+        transform: translateY(calc(206px + 16vw)) scale(0.9);
+      }
     }
 
     .work {
       opacity: 1;
       transform: translateY(306px);
+
+      @media screen and (max-width: 600px) {
+        transform: translateY(calc(206px + 16vw));
+      }
 
       &:nth-child(1) {
         transition: all 2s $ease-both 0.1s;
