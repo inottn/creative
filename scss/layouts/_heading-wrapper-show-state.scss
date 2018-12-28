@@ -7,6 +7,11 @@
       transform: translateY(px2vw(120px)) translateY(-50vh)
         translateY(px2vw(102.85px));
     }
+
+    @media screen and (max-width: 1100px) {
+      transform: translateY(px2vw(120px)) translateY(-50vh)
+        translateY(px2vw(102.85px)) translateY(40px);
+    }
   }
 
   .heading-wrapper {

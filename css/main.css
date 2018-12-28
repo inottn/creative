@@ -235,6 +235,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .home .heading-wrapper {
+    transform: translateY(27.43056vw) translateY(48px);
+  }
+}
+
 .home .heading-wrapper h2 {
   font-family: 'SF Pro Display';
   font-weight: 800;
@@ -242,6 +248,13 @@ a {
   line-height: 78px;
   color: #000000;
   opacity: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .home .heading-wrapper h2 {
+    font-size: calc(4vw + 26px);
+    line-height: 1.2;
+  }
 }
 
 .home .heading-wrapper p {
@@ -252,6 +265,17 @@ a {
   line-height: 39px;
   color: rgba(0, 0, 0, 0.6);
   opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .home .heading-wrapper p {
+    padding: 0 4vw;
+    font-size: calc(0.6vw + 20px);
+    line-height: 1.4;
+  }
+  .home .heading-wrapper p br {
+    display: none;
+  }
 }
 
 .home .heading-wrapper button {
@@ -551,6 +575,12 @@ a {
 @media screen and (max-width: 1440px) {
   .heading-wrapper-show-state .creative-mask-wrapper {
     transform: translateY(8.33333vw) translateY(-50vh) translateY(7.14236vw);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .heading-wrapper-show-state .creative-mask-wrapper {
+    transform: translateY(8.33333vw) translateY(-50vh) translateY(7.14236vw) translateY(40px);
   }
 }
 
