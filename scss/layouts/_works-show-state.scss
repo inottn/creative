@@ -15,10 +15,6 @@
       display: none;
     }
 
-    @media screen and (max-width: $root-width) {
-      transform: translateY(px2vw(-412px));
-    }
-
     h2, p, button {
       opacity: 1;
     }
@@ -125,7 +121,7 @@
 
 @keyframes selected-projects-text-wrapper-show-animation-media {
   0% {
-    top: px2vw(623px);
+    top: 623px;
     opacity: 0;
   }
   100% {
